@@ -1,6 +1,6 @@
 spring:
   application:
-    name: product-service
+    name: products-service
   datasource:
     url: ${POSTGRESQL_URI}
     username: ${POSTGRESQL_USERNAME}
