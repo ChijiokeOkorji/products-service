@@ -1,20 +1,6 @@
 # Products Service
 The Products Service is a microservice that provides endpoints for managing products. It allows users to create, retrieve, update, and delete products, and requests can be authenticated using either OAuth 2.0 access tokens or API keys. The service also implements role-based access control (RBAC).
 
-## Configuration
-The Products Service can be configured using the `application.yaml` file. Below are the configurable properties:
-
-* `spring.application.name`: Name of the application
-* `spring.datasource.url`: URL of the PostgreSQL database
-* `spring.datasource.username`: Username for the PostgreSQL database
-* `spring.datasource.password`: Password for the PostgreSQL database
-* `spring.datasource.driver-class-name`: Driver class name for the PostgreSQL database
-* `spring.jpa.database-platform`: Database platform dialect for Hibernate
-* `spring.jpa.hibernate.ddl-auto`: Hibernate DDL auto strategy
-* `spring.security.oauth2.resourceserver.jwt.issuer-uri`: Issuer URI for JWT validation
-* `server.port`: Port on which the application runs
-* `eureka.client.serviceUrl.defaultZone`: Default zone for Eureka service registry
-
 ## Prerequisites
 Before running the Products Service, ensure you have the following prerequisites installed:
 
@@ -41,6 +27,20 @@ mvn clean install
 ```bash
 java -jar target/products-service-0.0.1-SNAPSHOT.jar
 ```
+
+## Configuration
+The Products Service can be configured using the `application.yaml` file. Below are the configurable properties:
+
+* `spring.application.name`: Name of the application
+* `spring.datasource.url`: URL of the PostgreSQL database
+* `spring.datasource.username`: Username for the PostgreSQL database
+* `spring.datasource.password`: Password for the PostgreSQL database
+* `spring.datasource.driver-class-name`: Driver class name for the PostgreSQL database
+* `spring.jpa.database-platform`: Database platform dialect for Hibernate
+* `spring.jpa.hibernate.ddl-auto`: Hibernate DDL auto strategy
+* `spring.security.oauth2.resourceserver.jwt.issuer-uri`: Issuer URI for JWT validation
+* `server.port`: Port on which the application runs
+* `eureka.client.serviceUrl.defaultZone`: Default zone for Eureka service registry
 
 ## Endpoints
 
