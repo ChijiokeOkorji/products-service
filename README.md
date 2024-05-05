@@ -8,6 +8,7 @@ Before running the Products Service, ensure you have the following prerequisites
 * Apache Maven
 * PostgreSQL database set up with the required tables (refer to the [AuthEntity class](https://github.com/ChijiokeOkorji/products-service/blob/main/src/main/java/com/example/products/infrastructure/entity/AuthEntity.java) for the required table columns)
 * Keycloak (for OAuth2 authentication and authorization)
+* Optional: You can also utilize the [OAuth Next App](https://github.com/ChijiokeOkorji/oauth-next-app) for managing user authentication credentials
 
 ## Installation
 1. Clone the repository:
