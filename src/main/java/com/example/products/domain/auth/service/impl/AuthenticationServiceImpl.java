@@ -27,7 +27,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     @Override
     public Authentication authenticate(String token) {
         try {
-            if (token.startsWith("FLW")) {
+            if (token.startsWith("API")) {
                 // Authenticate API Key
                 AuthEntity authEntity = authRepository.findByApiKey(token);
 
